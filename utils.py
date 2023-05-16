@@ -130,10 +130,7 @@ def getPred(msg, idx):
 
     em_modify = emotions[msg["emotion"][0]["label"]]
     score_em = float(msg["emotion"][0]["score"])
-    print(score_em * em_modify)
-    print(idx)
-    print(index)
-    print("-----")
+
     index += score_em * em_modify
     return index
 
